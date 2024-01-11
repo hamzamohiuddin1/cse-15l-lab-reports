@@ -57,4 +57,11 @@ Hello
 Testing testing
 Testing testing
 ^C
-```   
+```
+Explanation:   
+When I pressed enter, the program waited for input from my keyboard. Every time I typed something and pressed enter, the CLI echoed what I typed until I pressed ^C to quit. Since I initially had no arguments, the CLI waited for me to type an input/argument so it could display the 'contents' of that input, which was just echoing my text.   
+
+With a directory as an argument:   
+```[user@sahara ~/lecture1]$ cat ./messages```   
+Output:   
+
