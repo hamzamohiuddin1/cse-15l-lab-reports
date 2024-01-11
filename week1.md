@@ -1,6 +1,7 @@
 Hamza Mohiuddin Week 1 Lab Report
 
-1. cd command: All being run in ~/lecture1  
+1. cd command: All being run in ~/lecture1
+   
 No arguments:   
   ```[user@sahara ~/lecture1]$ cd```   
 Output:  
