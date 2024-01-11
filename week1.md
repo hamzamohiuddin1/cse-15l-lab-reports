@@ -1,8 +1,8 @@
 Hamza Mohiuddin Week 1 Lab Report
 
-1. cd command: In ~/lecture1
-No arguments:
-  [user@sahara ~/lecture1]$ cd
+1. cd command: In ~/lecture1 \n
+No arguments: \n
+  [user@sahara ~/lecture1]$ cd \n
 Output:
   [user@sahara ~]$
 Explanation:
