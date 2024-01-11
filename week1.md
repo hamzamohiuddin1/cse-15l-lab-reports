@@ -1,10 +1,8 @@
 Hamza Mohiuddin Week 1 Lab Report
 
 1. cd command: In ~/lecture1  
-No arguments:
-  '''
-  [user@sahara ~/lecture1]$ cd
-  ''' 
+No arguments:   
+  [user@sahara ~/lecture1]$ cd   
 Output:  
   [user@sahara ~]$  
 Explanation:  
