@@ -40,5 +40,21 @@ Explanation:
 Since I specified ./messages as an argument, ls was performed on ~/lecture1/messages. Thus, the contents of the messages directory were displayed.   
 
 With a file as an argument:   
-```
+```[user@sahara ~/lecture1]$ ls Hello.java```   
+Output:   
+```Hello.java```    
+Explanation:   
+I gave the name of the file as an input. As a result, the command line just printed the name of the file Hello.java. This is because Hello.java is not a directory and thus has no files or directories inside of it, just itself.   
 
+3. cat command: All being run in ~/lecture1
+
+With no argument:   
+```[user@sahara ~/lecture1]$ cat```   
+Output: 
+```
+Hello
+Hello
+Testing testing
+Testing testing
+^C
+```   
