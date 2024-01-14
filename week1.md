@@ -14,7 +14,7 @@ With a directory path as an argument:
 Output:    
   ```[user@sahara ~/lecture1/messages]$```   
 Explanation:     
-Since I was in the ~/lecture1 directory and the messages directory existed inside lecture1, I was able to cd into ~/lecture1/messages, a subdirectory of my previous working directory.    
+Since I was in the ~/lecture1 directory and the messages directory existed inside lecture1, I was able to cd into ~/lecture1/messages, a subdirectory of my previous working directory.
 
 With a file as an argument:   
    ```[user@sahara ~/lecture1]$ cd Hello.java```   
