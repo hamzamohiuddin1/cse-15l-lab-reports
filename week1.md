@@ -64,4 +64,25 @@ When I pressed enter, the program waited for input from my keyboard. Every time 
 With a directory as an argument:   
 ```[user@sahara ~/lecture1]$ cat ./messages```   
 Output:   
+```cat: ./messages/: Is a directory```   
+Explanation:   
+The function of cat is to display the file contents of its argument. Since my argument was a directory and not a file, it just indicated that my argument, ./messages, is not a file and is a directory. This could serve as an error message, since cat is attempted to be used on something other than its main type of argument. cat could also be useful to find out if a directory exists.      
+
+With a file as an argument:    
+```[user@sahara ~/lecture1]$ cat Hello.java```   
+Output:    
+```
+import java.io.IOException;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Path;
+
+public class Hello {
+  public static void main(String[] args) throws IOException {
+    String content = Files.readString(Path.of(args[0]), StandardCharsets.UTF_8);    
+    System.out.println(content);
+  }
+```
+Explanation:    
+My argument was a file name that existed in my working directory. The output was the contents of the file. This could be useful if you don't want to open the file manually on the ide or you only have access to the terminal.   
 
