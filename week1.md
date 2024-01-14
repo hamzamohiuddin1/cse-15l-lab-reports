@@ -35,27 +35,29 @@ ls lists out the directories and files in my working directory. Because there ar
 With a directory as an argument:   
    ```[user@sahara ~/lecture1]$ ls ./messages```   
 Output:   
-   ```en-us.txt  es-mx.txt  no.txt  zh-cn.txt```   
+   ```en-us.txt  es-mx.txt  no.txt  zh-cn.txt```  
 Explanation:   
 Since I specified ./messages as an argument, ls was performed on ~/lecture1/messages. Thus, the contents of the messages directory were displayed.   
+
 With a file as an argument:   
    ```[user@sahara ~/lecture1]$ ls Hello.java```   
-   ```Hello.java```    
+Output:   
+   ``` Hello.java```   
 Explanation:   
 I gave the name of the file as an input. As a result, the command line just printed the name of the file Hello.java. This is because Hello.java is not a directory and thus has no files or directories inside of it, just itself.   
 
-3. cat command: All being run in ~/lecture1
+3. cat command: All being run in ~/lecture1   
 
 With no argument:   
    ```[user@sahara ~/lecture1]$ cat```   
-Output: 
+Output:   
    ```
    Hello
    Hello
    Testing testing
    Testing testing
    ^C
-   ```
+   ```   
 Explanation:   
 When I pressed enter, the program waited for input from my keyboard. Every time I typed something and pressed enter, the CLI echoed what I typed until I pressed ^C to quit. Since I initially had no arguments, the CLI waited for me to type an input/argument so it could display the 'contents' of that input, which was just echoing my text.   
 
