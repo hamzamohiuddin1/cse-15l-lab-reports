@@ -40,7 +40,9 @@ Explanation:
 Since I specified ./messages as an argument, ls was performed on ~/lecture1/messages. Thus, the contents of the messages directory were displayed.   
 
 With a file as an argument:   
-   ```[user@sahara ~/lecture1]$ ls Hello.java```   
+   ```[user@sahara ~/lecture1]$ ls Hello.java```  
+Output:   
+Output:   
 Output:   
    ``` Hello.java```   
 Explanation:   
