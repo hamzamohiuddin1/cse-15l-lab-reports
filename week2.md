@@ -40,3 +40,7 @@ class ChatServer {
     }
 }
 ```
+Message 1:     
+![Message 1](Screenshot 2024-01-28 at 12.44.32 PM.png)      
+Message 2:     
+![Message 2](Screenshot 2024-01-28 at 12.44.59 PM.png)       
