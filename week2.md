@@ -50,3 +50,13 @@ For message 2, the same variables and fields follow the same behavior. The handl
 
 The ```String messages``` field stores the chat log from the last call, ```esolares: Hello!```. Then, the method extracts ```String message: "hello"``` and ```String user: "jpolitz"``` variables from the ```String[] parameters: {"s", "jpolitz&message", "hello"}``` array. handleRequest then concatenates the new message log to the ```messages``` String, and returns ```messages``` to be displayed. As previously mentioned, ```messages``` is changed with every call as it is a class field, and the rest of the variables are instance variables and are not changed, but created with every call.      
 
+Absolute path to private key:    
+![img](./assets/privatekey.png)     
+Absolute path to public key:      
+![img](./assets/publickey.png)      
+Terminal interaction:    
+![img](./assets/terminalinteraction.png)       
+
+
+
+
