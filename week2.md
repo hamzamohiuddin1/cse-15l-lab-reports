@@ -18,7 +18,7 @@ class Handler implements URLHandler {
                 if (parameters[0].equals("s")) {
                     String message = parameters[1].substring(0, parameters[1].indexOf("&"));
                     String user = parameters[2];
-                    messages += user + ": " + message + "\n";
+                    messages += message + ": " + user + "\n";
                     return messages;
                 }
             }
