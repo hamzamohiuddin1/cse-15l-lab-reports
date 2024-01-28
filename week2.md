@@ -55,7 +55,10 @@ Absolute path to private key:
 Absolute path to public key:      
 ![img](./assets/publickey.png)      
 Terminal interaction:    
-![img](./assets/terminalinteraction.png)       
+![img](./assets/terminalinteraction.png)      
+
+In this lab, I learned how to run a server in java using the Server class. I did not know how to do this before, so this might become useful in the future.      
+
 
 
 
