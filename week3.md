@@ -51,7 +51,7 @@ static void reverseInPlace(int[] arr) {
      Tests run: 3,  Failures: 1
      ```
 4. Before and After:
-   -Before:
+   -Before:    
    ```
    static void reverseInPlace(int[] arr) {
     for(int i = 0; i < arr.length; i += 1) {
