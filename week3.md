@@ -8,21 +8,21 @@ static void reverseInPlace(int[] arr) {
   }
 ```    
 1. Failure inducing input:
-   ```
-	     public void testReverseInPlace() {
-	       int[] input1 = { 1, 2, 3, 4, 5 };
-	       ArrayExamples.reverseInPlace(input1);
-	       assertArrayEquals(new int[]{ 5, 4, 3, 2, 1 }, input1);
-	     }
-  ```
+```
+     public void testReverseInPlace() {
+       int[] input1 = { 1, 2, 3, 4, 5 };
+       ArrayExamples.reverseInPlace(input1);
+       assertArrayEquals(new int[]{ 5, 4, 3, 2, 1 }, input1);
+     }
+```
 2. Non-failure input:
-   ```
-	public void testReverseInPlace2() {
-	     int[] input1 = { 1, 2, 3, 2, 1};
-	     ArrayExamples.reverseInPlace(input1);
-	     assertArrayEquals(new int[]{ 1, 2, 3, 2, 1 }, input1);
-	   }
-   ```
+```
+public void testReverseInPlace2() {
+     int[] input1 = { 1, 2, 3, 2, 1};
+     ArrayExamples.reverseInPlace(input1);
+     assertArrayEquals(new int[]{ 1, 2, 3, 2, 1 }, input1);
+   }
+```
 3. The symptom:
    ```
    (base) hamza@Hamzas-Laptop lab3 % java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ArrayTests
@@ -50,7 +50,7 @@ static void reverseInPlace(int[] arr) {
      
      FAILURES!!!
      Tests run: 3,  Failures: 1
-     ```
+   ```
 4. Before and After:      
    -Before:    
    ```
