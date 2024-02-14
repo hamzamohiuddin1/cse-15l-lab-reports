@@ -71,3 +71,73 @@ static void reverseInPlace(int[] arr) {
     }
    }
    ```
+Part 2: Researching commands - find    
+1. -name pattern:
+   ```
+   	[user@sahara ~/docsearch/technical]$ find -name 'chapter*'
+	./911report/chapter-5.txt
+	./911report/chapter-13.1.txt
+	./911report/chapter-12.txt
+	./911report/chapter-11.txt
+	./911report/chapter-1.txt
+	./911report/chapter-10.txt
+	./911report/chapter-13.4.txt
+	./911report/chapter-8.txt
+	./911report/chapter-6.txt
+	./911report/chapter-7.txt
+	./911report/chapter-3.txt
+	./911report/chapter-13.5.txt
+	./911report/chapter-2.txt
+	./911report/chapter-13.3.txt
+	./911report/chapter-13.2.txt
+	./911report/chapter-9.txt
+	[user@sahara ~/docsearch/technical]$ find -name '*6750*.txt'
+	./biomed/1472-6750-3-4.txt
+	./biomed/1472-6750-2-14.txt
+	./biomed/1472-6750-1-11.txt
+	./biomed/1472-6750-3-11.txt
+	./biomed/1472-6750-3-6.txt
+	./biomed/1472-6750-1-13.txt
+	./biomed/1472-6750-2-13.txt
+	./biomed/1472-6750-1-8.txt
+	./biomed/1472-6750-1-12.txt
+	./biomed/1472-6750-1-6.txt
+	./biomed/1472-6750-2-21.txt
+	./biomed/1472-6750-2-2.txt
+	./biomed/1472-6750-2-10.txt
+   ```
+   -name lets you specify a name or pattern you want to look for in the specified directory. From https://www.geeksforgeeks.org/find-command-in-linux-with-examples/.
+   2. -type type:
+   ```
+        [user@sahara ~/docsearch/technical]$ find -type d
+	.
+	./911report
+	./biomed
+	[user@sahara ~/docsearch/technical]$ find -name '*6750*.txt' -type f
+	./biomed/1472-6750-3-4.txt
+	./biomed/1472-6750-2-14.txt
+	./biomed/1472-6750-1-11.txt
+	./biomed/1472-6750-3-11.txt
+	./biomed/1472-6750-3-6.txt
+	./biomed/1472-6750-1-13.txt
+	./biomed/1472-6750-2-13.txt
+	./biomed/1472-6750-1-8.txt
+	./biomed/1472-6750-1-12.txt
+	./biomed/1472-6750-1-6.txt
+	./biomed/1472-6750-2-21.txt
+	./biomed/1472-6750-2-2.txt
+	./biomed/1472-6750-2-10.txt
+    ```
+-type lets you specify the type of file you want to find, whether it is d (directory), or f (file). From https://www.geeksforgeeks.org/find-command-in-linux-with-examples/    
+  3. -size [+/-]n:    
+  ```
+	[user@sahara ~/docsearch/technical]$ find . -size +500
+	./911report/chapter-13.4.txt
+	./911report/chapter-3.txt
+	./911report/chapter-13.5.txt
+	[user@sahara ~/docsearch/technical]$ find . -size +500 -size -550
+	./911report/chapter-13.4.txt
+	./911report/chapter-3.txt
+  ```
+-size lets you specify a number of characters that you want your files to be above or below. +n means above n characters, -n means below n characters. From https://www.geeksforgeeks.org/find-command-in-linux-with-examples/     
+
