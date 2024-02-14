@@ -140,4 +140,14 @@ Part 2: Researching commands - find
 	./911report/chapter-3.txt
   ```
 -size lets you specify a number of characters that you want your files to be above or below. +n means above n characters, -n means below n characters. From https://www.geeksforgeeks.org/find-command-in-linux-with-examples/     
+4. -empty    
+```
+[user@sahara ~/docsearch/technical]$ find ./911report/ -empty
+	[user@sahara ~/docsearch/technical]$ find ./biomed/ -empty -name '*61*'
+	./biomed/ar615.txt
+	./biomed/ar612.txt
+	./biomed/ar619.txt
+	./biomed/bcr618.txt
+```
+-empty lets you specify that you are looking for files that are empty. From https://www.geeksforgeeks.org/find-command-in-linux-with-examples/     
 
