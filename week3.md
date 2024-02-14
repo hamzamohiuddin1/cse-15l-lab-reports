@@ -74,7 +74,7 @@ static void reverseInPlace(int[] arr) {
 Part 2: Researching commands - find    
 1. -name pattern:
    ```
-   	[user@sahara ~/docsearch/technical]$ find -name 'chapter*'
+   [user@sahara ~/docsearch/technical]$ find -name 'chapter*'
 	./911report/chapter-5.txt
 	./911report/chapter-13.1.txt
 	./911report/chapter-12.txt
@@ -109,7 +109,7 @@ Part 2: Researching commands - find
    -name lets you specify a name or pattern you want to look for in the specified directory. From https://www.geeksforgeeks.org/find-command-in-linux-with-examples/.
    2. -type type:
    ```
-        [user@sahara ~/docsearch/technical]$ find -type d
+   [user@sahara ~/docsearch/technical]$ find -type d
 	.
 	./911report
 	./biomed
@@ -131,7 +131,7 @@ Part 2: Researching commands - find
 -type lets you specify the type of file you want to find, whether it is d (directory), or f (file). From https://www.geeksforgeeks.org/find-command-in-linux-with-examples/    
   3. -size [+/-]n:    
   ```
-	[user@sahara ~/docsearch/technical]$ find . -size +500
+[user@sahara ~/docsearch/technical]$ find . -size +500
 	./911report/chapter-13.4.txt
 	./911report/chapter-3.txt
 	./911report/chapter-13.5.txt
