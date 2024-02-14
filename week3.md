@@ -50,7 +50,7 @@ static void reverseInPlace(int[] arr) {
      FAILURES!!!
      Tests run: 3,  Failures: 1
      ```
-4. Before and After:
+4. Before and After:      
    -Before:    
    ```
    static void reverseInPlace(int[] arr) {
