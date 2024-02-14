@@ -105,7 +105,7 @@ Part 2: Researching commands - find
 	./biomed/1472-6750-2-21.txt
 	./biomed/1472-6750-2-2.txt
 	./biomed/1472-6750-2-10.txt
-   ```
+   ```      
    -name lets you specify a name or pattern you want to look for in the specified directory. From https://www.geeksforgeeks.org/find-command-in-linux-with-examples/.
    2. -type type:
    ```
