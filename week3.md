@@ -81,7 +81,7 @@ Part 2: Researching commands - find
 	./biomed/1472-6750-2-2.txt
 	./biomed/1472-6750-2-10.txt
    ```      
-   -name lets you specify a name or pattern you want to look for in the specified directory. From https://www.geeksforgeeks.org/find-command-in-linux-with-examples/.     
+   -name lets you specify a name or pattern you want to look for in the specified directory. In this case there are a lot of files so looking with a specific number/code helps me narrow them down. This is useful if you are in someone else's server and want to look for a file that you did not create. From https://www.geeksforgeeks.org/find-command-in-linux-with-examples/.     
 2. -type type:
    ```
    [user@sahara ~/docsearch/technical]$ find -type d
@@ -103,7 +103,7 @@ Part 2: Researching commands - find
 	./biomed/1472-6750-2-2.txt
 	./biomed/1472-6750-2-10.txt
     ```
--type lets you specify the type of file you want to find, whether it is d (directory), or f (file). From https://www.geeksforgeeks.org/find-command-in-linux-with-examples/    
+-type lets you specify the type of file you want to find, whether it is d (directory), or f (file). In this case I am looking for files and not directories. This is useful if there are files that have the same name as their directory. From https://www.geeksforgeeks.org/find-command-in-linux-with-examples/    
   3. -size [+/-]n:    
   ```
 [user@sahara ~/docsearch/technical]$ find . -size +500
@@ -114,7 +114,7 @@ Part 2: Researching commands - find
 	./911report/chapter-13.4.txt
 	./911report/chapter-3.txt
   ```
--size lets you specify a number of characters that you want your files to be above or below. +n means above n characters, -n means below n characters. From https://www.geeksforgeeks.org/find-command-in-linux-with-examples/     
+-size lets you specify a number of characters that you want your files to be above or below. +n means above n characters, -n means below n characters. In this case, 1 of the files is above 500 but also above 550, so it doesn't fall within the 500-550 window. This is useful if you have multiple files of the same name that are of varying sizes, but you don't want to look directly. From https://www.geeksforgeeks.org/find-command-in-linux-with-examples/     
 4. -empty    
 ```
 [user@sahara ~/docsearch/technical]$ find ./911report/ -empty
@@ -124,5 +124,5 @@ Part 2: Researching commands - find
 ./biomed/ar619.txt
 ./biomed/bcr618.txt
 ```
--empty lets you specify that you are looking for files that are empty. From https://www.geeksforgeeks.org/find-command-in-linux-with-examples/     
+-empty lets you specify that you are looking for files that are empty. This is useful if you want to delete empty files, but don't know which files are empty. In this case, several files are empty so they may not be useful. From https://www.geeksforgeeks.org/find-command-in-linux-with-examples/     
 
