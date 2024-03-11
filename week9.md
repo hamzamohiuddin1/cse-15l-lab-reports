@@ -14,7 +14,7 @@ The issue here is that when I run ```bash test.sh```, no terminal output is disp
 I think there is something wrong with the way I compiled ```Examples.java```
 but I am not sure. Could someone point out where things go wrong? Thank you!        
         
-Response:    
+Tutor Response:    
 Hey Hamza! Thank you for reaching out. It seems you are misunderstanding the behavior of methods and primitive data types. In
 ```Examples.java```, You are correct in understanding that you need to increment ```i``` at the end of each iteration of the 
 ```while``` loop. However, the issue is where you call the ```incrementIndex``` method. When you pass a variable of a
@@ -24,7 +24,12 @@ a copy of ```i``` and incrementing that, while your original ```i``` is left unc
 and the ```while``` loop runs forever because ```i<arr.length``` is always ```0```. Instead, I would suggest a simpler way of
 incrementing ```i``` that perhaps takes place inside the loop instead of a different method. I hope this helps, let me know if you have
 any questions!     
-
-
+      
+Student Response:     
+I took your advice and tried out incrementing ```i``` locally. This made my code have the desired output: The memory location of ```arr```
+as a string. Instead of ```incrementIndex(i)```, which wasn't actually incrementing ```i```, I incremented it with ```i++``` locally inside of
+the ```while``` loop.       
+![Image](assets/fixedExamples.png)     
+![Image](assets/fixedOutput.png)
 
 
