@@ -22,6 +22,9 @@ Hey Hamza! Thank you for reaching out. It seems you are misunderstanding the beh
 primitive data type such as ```int```, the method creates a copy of the variable called and instance variable, and performs
 operations on this copy. In your case, the method is not incrementing the same ```i``` that you pass into it. It is creating
 a copy of ```i``` and incrementing that, while your original ```i``` is left unchanged. As a result, your index does not increment
-and the ```while``` loop runs forever because ```i<arr.length``` is always ```0```. I hope this helps, let me know if you have
+and the ```while``` loop runs forever because ```i<arr.length``` is always ```0```. Instead, I would suggest a simpler way of
+incrementing ```i``` that perhaps takes place inside the loop instead of a different method. I hope this helps, let me know if you have
 any questions!     
+
+
 
