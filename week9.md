@@ -30,6 +30,11 @@ I took your advice and tried out incrementing ```i``` locally. This made my code
 as a string. Instead of ```incrementIndex(i)```, which wasn't actually incrementing ```i```, I incremented it with ```i++``` locally inside of
 the ```while``` loop.       
 ![Image](assets/fixedExamples.png)     
-![Image](assets/fixedOutput.png)
+![Image](assets/fixedOutput.png)     
+     
+Reflection:    
+I think the most useful skill I learned in this class was doing everything from the terminal. ```vim``` specifically allows me to edit file
+contents from the terminal, which is really helpful when I don't have the time to open VsCode and open a file. This saves me a lot of time
+when I'm working on a big project that has a lot of subdirectories that are tough to navigate on VsCode.     
 
 
